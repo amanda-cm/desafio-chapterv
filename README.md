@@ -5,5 +5,5 @@
 
 # Passo a passo para gerar o relatório
 1. NPM RUN REPORT:MERGE
-2. PM RUN REPORT:MOCHA
+2. NPM RUN REPORT:MOCHA
 
