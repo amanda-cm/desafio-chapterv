@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-16T02:09:25.198Z",
+    "end": "2021-12-16T02:09:29.866Z",
+    "duration": 4668,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "66459275-d387-4aaf-ae53-4fce39c77f33",
+      "title": "",
+      "fullFile": "cypress/integration/e2e-signup.spec.js",
+      "file": "cypress/integration/e2e-signup.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fbf78210-d13f-44df-94f8-45245c89a791",
+          "title": "New user",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Quando eu informar os dados corretamente, então o cadastro deve ser criado",
+              "fullTitle": "New user Quando eu informar os dados corretamente, então o cadastro deve ser criado",
+              "timedOut": null,
+              "duration": 2604,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_signUp.default.inputSignUp();\n_signUp.default.submitSignUp();\ncy.url().should('contain', '#/');",
+              "err": {},
+              "uuid": "058ddaa7-8eea-4e4d-8e49-43049ab4dc1e",
+              "parentUUID": "fbf78210-d13f-44df-94f8-45245c89a791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Quando eu não informar os dados duplicados, então deve retornar uma mensagem de erro",
+              "fullTitle": "New user Quando eu não informar os dados duplicados, então deve retornar uma mensagem de erro",
+              "timedOut": null,
+              "duration": 1603,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_signUp.default.inputSignUp();\n_signUp.default.submitSignUp();\n_signUp.default.assert();",
+              "err": {},
+              "uuid": "afb3f86c-97d3-4580-9d15-ea744a2945cb",
+              "parentUUID": "fbf78210-d13f-44df-94f8-45245c89a791",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Quando eu não informar os dados e clicar em Sign Up, então deve retornar uma mensagem de erro",
+              "fullTitle": "New user Quando eu não informar os dados e clicar em Sign Up, então deve retornar uma mensagem de erro",
+              "timedOut": null,
+              "duration": 400,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_signUp.default.submitSignUp();\ncy.contains(\"email can't be blank\");",
+              "err": {},
+              "uuid": "6c47ed5e-3ce2-4eb0-8ba1-a2783dac975e",
+              "parentUUID": "fbf78210-d13f-44df-94f8-45245c89a791",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "058ddaa7-8eea-4e4d-8e49-43049ab4dc1e",
+            "afb3f86c-97d3-4580-9d15-ea744a2945cb",
+            "6c47ed5e-3ce2-4eb0-8ba1-a2783dac975e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4607,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

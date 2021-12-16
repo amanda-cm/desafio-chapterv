@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-16T02:09:33.324Z",
+    "end": "2021-12-16T02:09:37.426Z",
+    "duration": 4102,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ab9e2a55-e2a5-4840-83b5-d1dc4ac5519e",
+      "title": "",
+      "fullFile": "cypress/integration/ui-signIn.spec.js",
+      "file": "cypress/integration/ui-signIn.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "66fc76cc-8219-4ec3-b1a2-d351cb0850a0",
+          "title": "Sign In",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Quando eu iserir os dados corretamente, então o login deve ser efetuado",
+              "fullTitle": "Sign In Quando eu iserir os dados corretamente, então o login deve ser efetuado",
+              "timedOut": null,
+              "duration": 1584,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 200,\n  fixture: 'login-sucesso'\n}).as('loginUser');\ncy.visit('login');\n_login.default.inputCredentials();\n_login.default.clickButton();\ncy.url().should('contain', '#/');",
+              "err": {},
+              "uuid": "4ebfdf59-e0eb-4424-b608-1cde875b2946",
+              "parentUUID": "66fc76cc-8219-4ec3-b1a2-d351cb0850a0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Quando eu inserir a senha incorreta, então deve retornar erro 403",
+              "fullTitle": "Sign In Quando eu inserir a senha incorreta, então deve retornar erro 403",
+              "timedOut": null,
+              "duration": 849,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 403,\n  fixture: 'senha-incorreta'\n}).as('loginUser');\ncy.visit('login');\n_login.default.inputCredentials();\n_login.default.clickButton();\ncy.contains('email or password is invalid').should('be.visible');",
+              "err": {},
+              "uuid": "557f2396-6027-4441-be36-362f65083f38",
+              "parentUUID": "66fc76cc-8219-4ec3-b1a2-d351cb0850a0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Quando eu deixar o campo de e-mail em branco, então deve retornar o erro 422",
+              "fullTitle": "Sign In Quando eu deixar o campo de e-mail em branco, então deve retornar o erro 422",
+              "timedOut": null,
+              "duration": 846,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 422,\n  fixture: 'email-em-branco'\n}).as('loginUser');\ncy.visit('login');\n_login.default.inputCredentials();\n_login.default.clickButton();\ncy.contains(\"email can't be blank\").should('be.visible');",
+              "err": {},
+              "uuid": "5bc86f52-45cb-4f08-b6d6-c9fe7747539a",
+              "parentUUID": "66fc76cc-8219-4ec3-b1a2-d351cb0850a0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Quando eu deixar o campo senha em branco, então deve retornar um erro 422",
+              "fullTitle": "Sign In Quando eu deixar o campo senha em branco, então deve retornar um erro 422",
+              "timedOut": null,
+              "duration": 794,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'POST',\n  path: '/api/users/login'\n}, {\n  statusCode: 422,\n  fixture: 'senha-em-branco'\n}).as('loginUser');\ncy.visit('login');\n_login.default.inputCredentials();\n_login.default.clickButton();\ncy.contains(\"password can't be blank\").should('be.visible');",
+              "err": {},
+              "uuid": "2e54da27-6493-44ee-ab82-56c4fb35e01a",
+              "parentUUID": "66fc76cc-8219-4ec3-b1a2-d351cb0850a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4ebfdf59-e0eb-4424-b608-1cde875b2946",
+            "557f2396-6027-4441-be36-362f65083f38",
+            "5bc86f52-45cb-4f08-b6d6-c9fe7747539a",
+            "2e54da27-6493-44ee-ab82-56c4fb35e01a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4073,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
