@@ -1,0 +1,6 @@
+<testsuite name="Mocha Tests" tests="4" failures="0" errors="0" skipped="0" timestamp="Thu, 16 Dec 2021 01:23:56 GMT" time="6.523">
+<testcase classname="Sign In" name="Quando eu iserir os dados corretamente, ent&#xE3;o o login deve ser efetuado" time="2.659"/>
+<testcase classname="Sign In" name="Quando eu inserir a senha incorreta, ent&#xE3;o deve retornar erro 403" time="1.416"/>
+<testcase classname="Sign In" name="Quando eu deixar o campo de e-mail em branco, ent&#xE3;o deve retornar o erro 422" time="1.202"/>
+<testcase classname="Sign In" name="Quando eu deixar o campo senha em branco, ent&#xE3;o deve retornar um erro 422" time="1.132"/>
+</testsuite>

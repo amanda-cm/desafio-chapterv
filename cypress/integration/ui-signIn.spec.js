@@ -18,8 +18,7 @@ describe('Sign In', () => {
         }).as('loginUser')
 
         cy.visit('login')
-        login.inputEmail()
-        login.inputPassword()
+        login.inputCredentials()
         login.clickButton()
 
         cy.url().should('contain', '#/')
@@ -40,8 +39,7 @@ describe('Sign In', () => {
         }).as('loginUser')
 
         cy.visit('login')
-        login.inputEmail()
-        login.inputPassword()
+        login.inputCredentials()
         login.clickButton()
 
         cy.contains('email or password is invalid').should('be.visible')
@@ -62,10 +60,9 @@ describe('Sign In', () => {
         }).as('loginUser')
 
         cy.visit('login')
-        login.inputEmail()
-        login.inputPassword()
+        login.inputCredentials()
         login.clickButton()
-
+        
         cy.contains("email can't be blank").should('be.visible')
     });
 
@@ -84,8 +81,7 @@ describe('Sign In', () => {
         }).as('loginUser')
 
         cy.visit('login')
-        login.inputEmail()
-        login.inputPassword()
+        login.inputCredentials()
         login.clickButton()
 
         cy.contains("password can't be blank").should('be.visible')
