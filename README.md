@@ -6,4 +6,6 @@
 # Para gerar o relatório:
 1. NPM RUN REPORT:MERGE
 2. NPM RUN REPORT:MOCHA
+![image](https://user-images.githubusercontent.com/73889570/146295934-467e7c86-0907-402b-9d19-eb30e432fe15.png)
+
 
