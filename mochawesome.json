@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-12-16T02:16:59.135Z",
-    "end": "2021-12-16T02:17:03.814Z",
-    "duration": 4679,
+    "start": "2021-12-16T02:17:43.162Z",
+    "end": "2021-12-16T02:17:48.152Z",
+    "duration": 4990,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6df1c606-c0e8-43a1-acea-eb69f4bf47f7",
+      "uuid": "8e2b9985-9e2f-4ec7-92c5-e104089c34f7",
       "title": "",
       "fullFile": "cypress/integration/e2e-signup.spec.js",
       "file": "cypress/integration/e2e-signup.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6b93d288-384b-4ef4-b351-04165565c18e",
+          "uuid": "02a63f83-5a21-4ff6-87a8-afeb0065f65c",
           "title": "New user",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Quando eu informar os dados corretamente, então o cadastro deve ser criado",
               "fullTitle": "New user Quando eu informar os dados corretamente, então o cadastro deve ser criado",
               "timedOut": null,
-              "duration": 2575,
+              "duration": 2663,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "_signUp.default.inputSignUp();\n_signUp.default.submitSignUp();\ncy.url().should('contain', '#/');",
               "err": {},
-              "uuid": "21c15169-9e0e-4d06-a56f-5d6e22ce9816",
-              "parentUUID": "6b93d288-384b-4ef4-b351-04165565c18e",
+              "uuid": "089abe02-7dec-4cb3-a868-4cf2f6ecbea1",
+              "parentUUID": "02a63f83-5a21-4ff6-87a8-afeb0065f65c",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Quando eu não informar os dados duplicados, então deve retornar uma mensagem de erro",
               "fullTitle": "New user Quando eu não informar os dados duplicados, então deve retornar uma mensagem de erro",
               "timedOut": null,
-              "duration": 1588,
+              "duration": 1716,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "_signUp.default.inputSignUp();\n_signUp.default.submitSignUp();\n_signUp.default.assert();",
               "err": {},
-              "uuid": "ed9d59c6-1b9b-4b8b-b97c-8bd0d61c5b50",
-              "parentUUID": "6b93d288-384b-4ef4-b351-04165565c18e",
+              "uuid": "679e420e-faf2-47f0-95b2-1fd75bc1f5d0",
+              "parentUUID": "02a63f83-5a21-4ff6-87a8-afeb0065f65c",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Quando eu não informar os dados e clicar em Sign Up, então deve retornar uma mensagem de erro",
               "fullTitle": "New user Quando eu não informar os dados e clicar em Sign Up, então deve retornar uma mensagem de erro",
               "timedOut": null,
-              "duration": 460,
+              "duration": 548,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "_signUp.default.submitSignUp();\ncy.contains(\"email can't be blank\");",
               "err": {},
-              "uuid": "7a038d93-4aaf-4adc-b029-6a330d7f2b43",
-              "parentUUID": "6b93d288-384b-4ef4-b351-04165565c18e",
+              "uuid": "011d2182-e0a3-474a-860d-8986b2de6888",
+              "parentUUID": "02a63f83-5a21-4ff6-87a8-afeb0065f65c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "21c15169-9e0e-4d06-a56f-5d6e22ce9816",
-            "ed9d59c6-1b9b-4b8b-b97c-8bd0d61c5b50",
-            "7a038d93-4aaf-4adc-b029-6a330d7f2b43"
+            "089abe02-7dec-4cb3-a868-4cf2f6ecbea1",
+            "679e420e-faf2-47f0-95b2-1fd75bc1f5d0",
+            "011d2182-e0a3-474a-860d-8986b2de6888"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4623,
+          "duration": 4927,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
